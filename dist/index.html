@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+      <nav class="nav-wrapper">
+        <form>
+          <div class="search-field">
+            <img src="../img/search.png" alt="search">
+            <input type="text">
+          </div>
+        </form>
+        <a href="#">
+          <img src="../img/menu.png" alt="menu" class="menu">
+        </a>
+      </nav>
+      <div class="details">
+        <h1>
+          <span id="city-name">Ibadan</span>
+          <span id="country-name">NG</span>
+        </h1>
+        <span id="date-time">3:3 PM — Tuesday, 17 Mar `20</span>
+      </div>
+    </header>
+    <main id="main">
+      <h2 id="temp">
+        <span id="tempCel">38</span>
+        <span>&#8451;</span>
+        <!-- <span id="tempFah">100</span> -->
+        <!-- <span>&#8457;</span> -->
+      </h2>
+      <div class="weather-info">
+        <img src="../img/cloud.png" alt="cloud">
+        <p class="description">Overcast clouds</p>
+      </div>
+      <hr>
+    </main>
+    <footer id="footer">
+      <section>
+        <span class="title">Wind</span>
+        <span id="wind" class="data">3</span>
+        <span class="unit">M/S</span>
+      </section>
+      <section>
+        <span class="title">Cloud</span>
+        <span id="cloud" class="data">3</span>
+        <span class="unit">%</span>
+      </section>
+      <section>
+        <span class="title">Humidity</span>
+        <span id="humidity" class="data">3</span>
+        <span class="unit">%</span>
+      </section>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
