@@ -141,3 +141,37 @@ footer section .data {
 footer section .unit {
   font-size: 0.8rem;
 }
+
+/****** Responsive styles ********/ 
+
+@media only screen and (max-width: 760px) {
+  #container {
+    width: 60%;
+    max-width: 100%;
+    height: 400px;
+    font-size: 0.5rem;
+    padding: 1rem;
+  }
+
+  main,
+  .weather-info {
+    margin-top: 0px;
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  #tempCel {
+    font-size: 3rem;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  footer section .data {
+    align-self: center;
+    font-size: 1rem;
+  }
+}

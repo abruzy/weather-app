@@ -4,7 +4,9 @@ const displayResults = weather => {
   const country = document.getElementById('country-name');
   country.innerText = `${weather.sys.country}`;
   const temp = document.getElementById('tempCel');
-  temp.innerHTML = `${Math.round(weather.main.temp - 273.15)}<span>&#8451;</span>`;
+  temp.innerHTML = `${Math.round(weather.main.temp - 273.15)}`;
+  const icon = document.querySelector('.icon');
+  icon.innerHTML = '&#8451;';
   const weatherInfo = document.querySelector('.description');
   weatherInfo.innerText = `${weather.weather[0].description}`;
   const wind = document.getElementById('wind');
