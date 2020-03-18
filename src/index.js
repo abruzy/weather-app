@@ -21,6 +21,11 @@ dateTime.innerHTML = formatDate();
 
 function getResults(query) {
   fetch(`${api.baseurl}?q=${query}&appid=${api.key}`, { mode: 'cors' })
+  .then(response => {
+    return response.json();
+  }).then(data => {
+    displayResults(data);
+  });
 }
 
 // set query
@@ -28,6 +33,7 @@ function getResults(query) {
 const setQuery = evt => {
   if (evt.keyCode === 13) {
     getResults(search.value);
+    search.value = '';
   }
 };
 
