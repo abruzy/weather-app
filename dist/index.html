@@ -12,10 +12,10 @@
   <div id="container">
     <header id="header">
       <nav class="nav-wrapper">
-        <form>
+        <form onsubmit="event.preventDefault();" autocomplete="off">
           <div class="search-field">
             <img src="../img/search.png" alt="search">
-            <input type="text">
+            <input type="text" class="search-box" placeholder="Search for a city">
           </div>
         </form>
         <a href="#">
@@ -24,39 +24,39 @@
       </nav>
       <div class="details">
         <h1>
-          <span id="city-name">Ibadan</span>
-          <span id="country-name">NG</span>
+          <span id="city-name"></span>
+          <span id="country-name"></span>
         </h1>
         <span id="date-time"></span>
       </div>
     </header>
     <main id="main">
       <h2 id="temp">
-        <span id="tempCel">38</span>
-        <span>&#8451;</span>
+        <span id="tempCel"></span>
+        <!-- <span>&#8451;</span> -->
         <!-- <span id="tempFah">100</span> -->
         <!-- <span>&#8457;</span> -->
       </h2>
       <div class="weather-info">
         <img src="../img/cloud.png" alt="cloud">
-        <p class="description">Overcast clouds</p>
+        <p class="description"></p>
       </div>
       <hr>
     </main>
     <footer id="footer">
       <section>
         <span class="title">Wind</span>
-        <span id="wind" class="data">3</span>
+        <span id="wind" class="data"></span>
         <span class="unit">M/S</span>
       </section>
       <section>
         <span class="title">Cloud</span>
-        <span id="cloud" class="data">3</span>
+        <span id="cloud" class="data"></span>
         <span class="unit">%</span>
       </section>
       <section>
         <span class="title">Humidity</span>
-        <span id="humidity" class="data">3</span>
+        <span id="humidity" class="data"></span>
         <span class="unit">%</span>
       </section>
     </footer>
