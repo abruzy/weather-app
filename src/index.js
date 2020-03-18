@@ -21,11 +21,9 @@ dateTime.innerHTML = formatDate();
 
 function getResults(query) {
   fetch(`${api.baseurl}?q=${query}&appid=${api.key}`, { mode: 'cors' })
-  .then(response => {
-    return response.json();
-  }).then(data => {
-    displayResults(data);
-  });
+    .then(response => response.json()).then(data => {
+      displayResults(data);
+    });
 }
 
 // set query
