@@ -29,7 +29,7 @@ function getResults(query) {
       if (query === data.name) {
         displayResults(data);
       } else {
-        displayErrorMessage();
+        displayErrorMessage(query);
       }
     });
 }
