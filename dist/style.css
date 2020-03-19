@@ -70,6 +70,19 @@ form img,
   cursor: pointer;
 }
 
+.notification {
+  background-color: #f8d7da;
+  display: none;
+  border-radius: 4px;
+}
+
+.notification p {
+  color: #721c24;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px 0;
+}
+
 .details {
   margin-top: 5rem;
 }
