@@ -7,6 +7,8 @@ const displayResults = weather => {
   temp1.innerHTML = `${Math.round(weather.main.temp - 273.15)}<span>&#8451;</span>`;
   const temp2 = document.getElementById('tempCel2');
   temp2.innerHTML = `${Math.round((weather.main.temp - 273.15) * 1.8 + 32)}<span>&#8457;</span>`;
+  const iconElement = document.querySelector('.icon');
+  iconElement.innerHTML = `<img src="../icons/${weather.weather[0].icon}.png" alt="cloud">`;
   const weatherInfo = document.querySelector('.description');
   weatherInfo.innerText = `${weather.weather[0].description}`;
   const wind = document.getElementById('wind');
