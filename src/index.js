@@ -6,9 +6,8 @@ import getResults from './processWeatherData';
 
 const dateTime = document.getElementById('date-time');
 const search = document.querySelector('.search-box');
-const tempContainer = document.getElementById('temp');
-// const temp = document.getElementById('tempCel');
-const icon = document.querySelector('.icon');
+const temp1 = document.getElementById('tempCel1');
+const temp2 = document.getElementById('tempCel2');
 
 // Format Date
 
@@ -26,12 +25,16 @@ const setQuery = evt => {
 
 // event handlers
 
+temp2.style.display = 'none';
 document.addEventListener('DOMContentLoaded', currentLocation);
 search.addEventListener('keypress', setQuery);
-tempContainer.addEventListener('click', () => {
-  if (icon.innerHTML === '&#8451;') {
-    icon.innerHTML = '&#8451;';
-  } else {
-    icon.innerHTML = '&#8457;';
-  }
+
+temp1.addEventListener('click', () => {
+  temp2.style.display = 'block';
+  temp1.style.display = 'none';
+});
+
+temp2.addEventListener('click', () => {
+  temp1.style.display = 'block';
+  temp2.style.display = 'none';
 });
