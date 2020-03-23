@@ -1,7 +1,7 @@
+import { format } from 'date-fns';
 import currentLocation from './geolocation';
 import getResults from './processWeatherData';
 
-const format = require('date-fns');
 // nodes
 
 const dateTime = document.getElementById('date-time');

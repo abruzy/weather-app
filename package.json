@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint --ext .js --ignore-path .gitignore . --fix",
     "lint:dev": "nodemon --exec \"npm run lint\" .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch",
-    "start": "live-server ./dist/"
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production --watch",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,8 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "date-fns": "^2.11.0",
