@@ -84,9 +84,8 @@ npm run build
 <!-- USAGE EXAMPLES -->
 ## Usage
 ```
-open live-server
+npm start
 ```
- | Visit http://127.0.0.1:5500/dist/
 
 <!-- ROADMAP -->
 ## Roadmap
