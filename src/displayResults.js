@@ -9,6 +9,8 @@ const displayResults = weather => {
   temp2.innerHTML = `${Math.round((weather.main.temp - 273.15) * 1.8 + 32)}<span>&#8457;</span>`;
   const iconElement = document.querySelector('.icon');
   iconElement.innerHTML = `<img src="../icons/${weather.weather[0].icon}.png" alt="cloud">`;
+  const backgoundImage = document.getElementById('container');
+  backgoundImage.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/${weather.weather[0].icon}.jpg')`;
   const weatherInfo = document.querySelector('.description');
   weatherInfo.innerText = `${weather.weather[0].description}`;
   const wind = document.getElementById('wind');
