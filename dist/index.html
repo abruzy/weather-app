@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+      <nav class="nav-wrapper">
+        <form onsubmit="event.preventDefault();" autocomplete="off">
+          <div class="search-field">
+            <img src="../img/search.png" alt="search">
+            <input type="text" class="search-box" placeholder="Search for a city">
+          </div>
+        </form>
+        <a href="#">
+          <img src="../img/menu.png" alt="menu" class="menu">
+        </a>
+      </nav>
+      <div class="notification"></div>
+      <div class="details">
+        <h1>
+          <span id="city-name"></span>
+          <span id="country-name"></span>
+        </h1>
+        <span id="date-time"></span>
+      </div>
+    </header>
+    <main id="main">
+      <h2 id="temp">
+        <span id="tempCel1"></span>
+        <span id="tempCel2"></span>
+      </h2>
+      <div class="weather-info">
+        <div class="icon">
+          <img src="../icons/unknown.png" alt="cloud">
+        </div>
+        <p class="description"></p>
+      </div>
+      <hr>
+    </main>
+    <footer id="footer">
+      <section>
+        <span class="title">Wind</span>
+        <span id="wind" class="data"></span>
+        <span class="unit">M/S</span>
+      </section>
+      <section>
+        <span class="title">Cloud</span>
+        <span id="cloud" class="data"></span>
+        <span class="unit">%</span>
+      </section>
+      <section>
+        <span class="title">Humidity</span>
+        <span id="humidity" class="data"></span>
+        <span class="unit">%</span>
+      </section>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
