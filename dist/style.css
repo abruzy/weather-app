@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  min-height: 600px;
+  margin: 3rem auto;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  padding: 2rem;
+  border: 10px solid white;
+  border-radius: 50px;
+  text-transform: capitalize;
+  background-image: url("../img/01n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+}
+
+.search-field input {
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 2px 4px;
+  margin-left: 15px;
+}
+
+form img,
+.menu {
+  height: 1.8rem;
+  filter: invert();
+  cursor: pointer;
+}
+
+.notification {
+  background-color: #f8d7da;
+  display: none;
+  border-radius: 4px;
+}
+
+.notification p {
+  color: #721c24;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.details {
+  margin-top: 5rem;
+}
+
+#country-name,
+#date-time {
+  font-size: 0.9rem;
+}
+
+main {
+  margin-top: 7rem;
+}
+
+main h2 {
+  text-align: center;
+  cursor: pointer;
+}
+
+main h2 span {
+  font-size: 10rem;
+  line-height: 8rem;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+}
+
+.weather-info {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.weather-info .icon img {
+  height: 5rem;
+  filter: invert();
+}
+
+hr {
+  margin-top: 5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0;
+}
+
+footer section {
+  display: grid;
+  grid-template-rows: auto 3rem auto;
+  justify-content: center;
+}
+
+footer section .title {
+  opacity: 0.5;
+  font-size: 0.8rem;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+footer section .data {
+  align-self: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+footer section .unit {
+  font-size: 0.8rem;
+}
+
+/****** Responsive styles ********/ 
+
+@media only screen and (max-width: 760px) {
+  #container {
+    width: 60%;
+    max-width: 100%;
+    height: 400px;
+    font-size: 0.5rem;
+    padding: 1rem;
+  }
+
+  main,
+  .weather-info {
+    margin-top: 0px;
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  #tempCel {
+    font-size: 3rem;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  footer section .data {
+    align-self: center;
+    font-size: 1rem;
+  }
+}
